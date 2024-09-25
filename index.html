@@ -7,14 +7,22 @@
     
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href="./styles/bootstrap.min.css" rel="stylesheet" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- <link rel="stylesheet" href="./styles/fontawesome.min.css"/> -->
         <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="./styles/Slider3D.css"> 
+        <link rel="stylesheet" href="./styles/Slider.css"> 
+        <link rel="stylesheet" href="./styles/FlipCard.css"> 
         <link rel="stylesheet" href="./styles/style.css"> 
     </head>
     <body>
+
         <!-- NavBar -->
         <nav class="navbar  navbar-expand-lg">
             <div class="container-fluid">
@@ -32,9 +40,12 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#serv_collect">Collecting</a></li>
-                            <li><a class="dropdown-item" href="#serv_aware">Awareness</a></li>
+                            <li><a class="dropdown-item" href="#Services_Waste">Waste</a></li>
+                            <li><a class="dropdown-item" href="#Services_Electronic">Electronics</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" aria-disabled="true" href="#Bekia_Packages">Packages</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-disabled="true">Sustainability</a>
@@ -129,7 +140,7 @@
         <!-- Bekia Packages -->
         <section id="Bekia_Packages" class="container_padding">
             <div class="packageTitle">
-                <h1>Bekia Packages</h1>
+                <h1 class="bold_title">Bekia Packages</h1>
                 <h3>Tell us About Your Package With Bekia</h3>
             </div>
             <div class="packageBoxContainer">
@@ -183,7 +194,7 @@
                 </div>
                 <div class="package_box">
                     <h3>Wallet Package</h3>
-                    <img src="./images/Clip path group.svg"/>
+                    <img src="./images/wallet 1.svg"/>
                     <div class="packageFeature">
                         <div class="checkrow">
                             <img src="./icons/Icon.svg" />
@@ -208,9 +219,268 @@
                 
             </div>
         </section>
+
+        <!-- Collected -->
+        <section id="Collected_waste" class="container_padding Slider3D">
+            <div class="container" data-theme='light'>
+                <div class="collected_title">
+                    <h1 class="bold_title">Things We Collect</h1>
+                </div>
+                <div class="slider-container">
+                  <div class="slider">
+                    <div class="slide">
+                        <img src="/images/Things 1.png"/>
+                        <span>علب  الشامبو والمسحوق</span>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Things 2.png"/>
+                        <span>الورق  والكتب</span>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Things 3.png"/>
+                        <span>علب  لبن  الاطفال</span>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Things 4.png"/>
+                        <span>النحاس</span>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Things 5.png"/>
+                        <span>الاجهزة  والاثاث  القديم  والمستعملة</span>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Things 6.png"/>
+                        <span>Water and Oil bottels</span>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Things 7.png"/>
+                        <span>الكنز</span>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Things 8.png"/>
+                        <span>الالومنيوم</span>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Things 9.png"/>
+                        <span>الحديد</span>
+                    </div>
+                    <div class="slide">
+                        <img src="/images/Things 10.png"/>
+                        <span>الصفائح</span>
+                    </div>
+                    
+                  </div>
+                  <div class="slider-buttons">
+                    <button id="prev-slide" aria-label="Previous Slide" title="Go To Previous Slide"></button>
+                    <button id="nxt-slide" aria-label="Next Slide" title="Go To Next Slide"></button>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- Events -->
+        <section id="Events" class="container_padding">
+            <div class="eventTitle">
+                <h1 class="bold_title">Events We particpated in</h1>
+            </div>
+        </section>
+        
+        <!-- About -->
+        <section id="About" class="container_padding">
+            <div>
+                <h1 class="bold_title">Vision:</h1>
+                <p>To lead the transformation towards an innovative waste management solutions that reduce environmental impact, conserve natural resources, and create economic opportunities for communities.</p>
+            </div>
+            <div>
+                <h1 class="bold_title">Mission:</h1>
+                <p>Our mission is to establish a comprehensive waste management system that empowers communities to actively participate in recycling and sustainable practices. By leveraging advanced technology and efficient processes, we aim to reduce carbon emissions, conserve resources, and promote a circular economy, contributing to a cleaner and healthier environment for future generations.</p>
+            </div>
+            <div>
+                <h1 class="bold_title">Our History:</h1>
+                <p>Since our launch in September 2023, Bekyapay has successfully reached over 1,000 homes in Alexandria and partnered with more than 30 institutions within one year. We have recycled approximately 115 tons of waste during this period and raised awareness about waste separation and recycling among more than 300 people. Additionally, we have repaired and resold over 100 electronic devices and pieces of furniture at highly affordable prices to support the most disadvantaged communities. Our efforts have not only provided essential items at lower costs but also significantly contributed to reducing emissions and promoting a cleaner, more sustainable environment.</p>
+                <p>Our team at Bekyapay has accomplished significant milestones since our launch in September 2023. We’ve proudly expanded our reach to over 1,000 homes in Alexandria and secured partnerships with more than 30 institutions in just one year. We’ve successfully recycled approximately 115 tons of waste, helping to reduce environmental impact and promote sustainability. Additionally, we’ve educated over 300 individuals on the importance of waste separation and recycling. One of our most rewarding achievements has been the repair and resale of over 100 electronic devices and furniture pieces at affordable prices to support disadvantaged communities. These efforts have not only improved access to essential items but also contributed to lowering emissions and building a cleaner future."</p>
+            </div>
+        </section>
+
+        <!-- Our Team -->
+        <section id="Team" class="container_padding">
+            <div class="teamTitle">
+                <h1 class="bold_title">Our Team Members</h1>
+            </div>
+            <div class="teamRow">
+                <div class = "dm-flip-card light">
+
+                    <div class = "dm-front-card">  
+                        <div class="teamMemberContainer">
+                            <img src="./images/Team 2.png"/>
+                        </div>
+                        <span>Mohamed Ibrahim</span>
+                        <span>COO</span>
+                    </div>
+                    
+                    <div class = "dm-back-card">
+                        <span>Mohamed Ibrahim</span>
+                        <span>Mohamed Ibrahim Team Member</span>
+                    </div>
+                </div>
+                <div class = "dm-flip-card dark">
+
+                    <div class = "dm-front-card">  
+                        <div class="teamMemberContainer">
+                            <img src="./images/Team 1.png"/>
+                        </div>
+                        <span>Omer Saleh</span>
+                        <span>HSES</span>
+                    </div>
+                    
+                    <div class = "dm-back-card">
+                        <span>Omer Saleh</span>
+                        <span>Omer Saleh Team Member</span>
+                    </div>
+                </div>
+                <div class = "dm-flip-card light">
+
+                    <div class = "dm-front-card">  
+                        <div class="teamMemberContainer">
+                            <img src="./images/Team 3.png"/>
+                        </div>
+                        <span>Mohamed Hamdy</span>
+                        <span>CEO</span>
+                    </div>
+                    
+                    <div class = "dm-back-card">
+                        <span>Mohamed Hamdy</span>
+                        <span>Mohamed Hamdy Team Member</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustainability -->
+        <section id="Sustainability" class="container_padding">
+            <div class="sustainTitle">
+                <h1 class="bold_title">Sustainability</h1>
+            </div>
+            <div class="calculations">
+                <div class="sustain_calculations">
+                    <p>Our Management System</p>
+                    <p>Net Emissions:<br/>-0.4 to -0.9 tons CO₂ per ton of waste (depending on material and efficiency).</p>
+                </div>
+                <div class="sustain_calculations">
+                    <p>Traditional System (Mixed Collection, Sorting, and Landfilling/Incineration):</p>
+                    <p>Net Emissions:<br/>0.7 to 1.5 tons CO₂ per ton of waste.</p>
+                </div>
+                
+            </div>
+            <div>
+                <p>Our system of separating recyclables at the source and transporting them directly to recycling plants can save around 1.1 to 2.4 tons CO₂ per ton of waste compared to the traditional system, depending on the material type and specific operations. A negative value for net emissions (e.g., -0.4 to -0.9 tons CO₂ per ton of waste) indicates that our system results in a net reduction of CO₂ emissions. In this case, the savings in emissions from recycling (which avoids the need to produce new materials) outweigh the emissions produced during the collection and recycling processes. a negative value for net emissions (e.g., -0.4 to -0.9 tons CO₂ per ton of waste) indicates that our system results in a net reduction of CO₂ emissions. In this case, the savings in emissions from recycling (which avoids the need to produce new materials) outweigh the emissions produced during the collection and recycling processes.</p>
+            </div>
+        </section>
+
+        <!-- Sponsers -->
+        <section id="Sponsers" class="container_padding">
+            <div class="sponserTitle">
+                <h1 class="bold_title">Our sponsors</h1>
+            </div>
+            <div>
+                <!-- Slider main container -->
+                <div class="Slider">
+                    <div class="swiper-full">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/Sponser 1.png" alt="نهضة المحروسة" class="img-fluid" /></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section id="Partners" class="container_padding">
+            <div class="partnerTitle">
+                <h1 class="bold_title">Our Partners</h1>
+            </div>
+            <div>
+                <!-- Slider main container -->
+                <div class="Slider">
+                    <div class="swiper-full">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/Partner 1.png" alt="جمعية رجال أعمال اسكندرية" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="./images/Partner 2.png" alt="Ecole Girard" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="./images/Partner 3.png" alt="OII" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="./images/Partner 4.png" alt="جامعة اسكندرية" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="./images/Partner 5.png" alt="Khan El Hussein Market" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="./images/Partner 6.png" alt="كلية طب اسكندرية" class="img-fluid" /></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Schedule -->
+        <section id="Schedule" class="container_padding">
+            <div>
+                <img src="./images/Eye.svg"/>
+            </div>
+            <div>
+                <h1 class="bold_title">Schedule a visit now</h1>
+                <h2 >If you have a waste and need to get red of fill in this form</h2>
+                <button>Register</button>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="Testimonials" class="container_padding">
+            <div class="divTitle">
+                <h1 class="bold_title">What Our Clients Says</h1>
+            </div>
+            <div>
+                <!-- Slider main container -->
+                <div class="Slider">
+                    <div class="swiper-full">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/Testimonial 1.png" alt="Testimonial Image" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="./images/Testimonial 2.png" alt="Testimonial Image" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="./images/Testimonial 3.png" alt="Testimonial Image" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="./images/Testimonial 4.png" alt="Testimonial Image" class="img-fluid" /></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Soon -->
+        <section id="Soon" class="container_padding">
+            <div class="divTitle">
+                <h1 class="bold_title">Soon Our Mobile App</h1>
+            </div>
+            <div class="soonRow">
+                <img src="./images/Soon 1.png" />
+                <img src="./images/Soon 2.png" />
+                <img src="./images/Soon 3.png" />
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="Footer" class="container_padding">
+
+        </section>
+
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
-        <script src="./js/bootstrap.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <script src="./js/bootstrap.js"></script>
+        <script src="./js/Slider3D.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/Slider.js"></script>
         <!-- <script src="./js/jquery.js"></script> -->
     </body>
 </html>

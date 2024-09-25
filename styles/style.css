@@ -1,15 +1,23 @@
 /* -------------------- Vars -------------------- */
 :root {
     --dark-color: #2c2c2c;
+    --darker-color:#1e1e1e;
     --yellow-color: #FFCA0A;
-    --light-color: white;
+    --dark-yellow-color: orange;
+    --light-color: #eeeeee;
+    --transition-time: 0.5s;
 }
-/* General */
+
+/* -------------------- General -------------------- */
 body{
     margin: 0px;
 }
 .container_padding{
     padding: 0px 15%;
+}
+
+.bold_title{
+    font-weight: bolder;
 }
 
 /* -------------------- Nav Bar -------------------- */
@@ -54,7 +62,7 @@ nav .btn:hover {
 
 /* -------------------- Home Section -------------------- */
 #Home {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,20 +191,21 @@ nav .btn:hover {
 
 /* -------------------- Bekia Packages -------------------- */
 #Bekia_Packages{
-    height: 90vh;
+    min-height: 100vh;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: var(--light-color);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; */
 }
 
 #Bekia_Packages .packageTitle{
     color: var(--yellow-color);
     font-weight: bolder; 
     text-align: center;  
+    margin: 40px 0px;
 }
 #Bekia_Packages .packageBoxContainer{
     height: 60%;
@@ -206,6 +215,7 @@ nav .btn:hover {
     flex-wrap: wrap;
 }
 #Bekia_Packages .packageBoxContainer .package_box{
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -215,7 +225,12 @@ nav .btn:hover {
     padding: 50px 50px;
     height: max-content;
     width: 350px;
-    margin: 0px 10px;
+    margin: 10px 10px;
+    transition: var(--transition-time);
+}
+#Bekia_Packages .packageBoxContainer .package_box:hover{
+    transform: scale(1.05);
+
 }
 #Bekia_Packages .packageBoxContainer .package_box img{
     width: 130px;
@@ -244,4 +259,274 @@ nav .btn:hover {
     border: none;
     padding: 5px 20px;
     border-radius: 10px;
+    transition: var(--transition-time);
+}
+#Bekia_Packages .packageBoxContainer .bookNowButton:hover{
+    background-color: var(--dark-yellow-color);
+}
+
+
+
+/* -------------------- Collected Waste -------------------- */
+#Collected_waste{
+    min-height: max-content;
+    background-color: var(--yellow-color);
+    padding-bottom: 50px;
+    height: 590px;
+
+}
+
+#Collected_waste .collected_title{
+    color: var(--light-color);
+    margin: 50px 0px;
+}
+
+
+/* -------------------- Events -------------------- */
+#Events{
+    height: 100vh;
+    background-color: var(--dark-color);
+}
+#Events .eventTitle{
+    color: var(--yellow-color);
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+
+/* -------------------- About -------------------- */
+#About{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--light-color);
+}
+
+/* -------------------- Team -------------------- */
+#Team{
+    background-color: var(--yellow-color);
+    /* display: flex;
+    flex-direction: row; */
+    padding-bottom: 50px;
+
+}
+#Team .teamTitle{
+    padding: 50px 0px;
+    text-align: center;
+}
+#Team .teamRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Team .teamRow .dm-flip-card{
+    margin: 10px;
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+}
+#Team .teamRow .dm-flip-card.dark .dm-front-card{
+    background-color: var(--darker-color);
+    color: var(--light-color);
+}
+#Team .teamRow .dm-flip-card.light .dm-front-card{
+    background-color: white;
+    color: var(--datk-color);
+
+}
+
+#Team .teamRow .dm-flip-card .dm-front-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#Team .teamRow .dm-flip-card .dm-front-card .teamMemberContainer{
+    overflow: hidden;
+    border-radius: 100%;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#Team .teamRow .dm-flip-card.dark .dm-front-card .teamMemberContainer{
+    background-color: var(--dark-color);
+}
+
+#Team .teamRow .dm-flip-card.light .dm-front-card .teamMemberContainer{
+    background-color: var(--light-color);
+}
+#Team .teamRow .dm-flip-card .dm-front-card .teamMemberContainer img{
+    width: 80%;
+}
+#Team .teamRow .dm-flip-card .dm-front-card span{
+    font-weight: bolder;
+}
+#Team .teamRow .dm-flip-card .dm-back-card{
+    border-radius: 20px;
+    background-color: var(--dark-yellow-color);
+}
+
+/* -------------------- Sustainability -------------------- */
+#Sustainability{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+#Sustainability .calculations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#Sustainability .calculations .sustain_calculations{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 50px 0px;
+}
+
+/* -------------------- Sponsers -------------------- */
+#Sponsers{
+    background-color: var(--dark-color);
+    padding-bottom: 20px;
+}
+#Sponsers .sponserTitle{
+    color: var(--yellow-color);
+    text-align: center;
+}
+#Sponsers .swiper-full .swiper-slide {
+    width: 200px;
+}
+
+#Sponsers .swiper-pagination{
+    background-color: var(--light-color);
+}
+#Sponsers .swiper-pagination-bullet-active{
+    background-color: var(--yellow-color);
+    
+}
+
+/* -------------------- Partners -------------------- */
+#Partners{
+    background-color: var(--yellow-color);
+    padding-bottom: 20px;
+}
+#Partners .partnerTitle{
+    color: var(--dark-color);
+    padding: 50px 0px;
+    text-align: center;
+}
+
+#Partners .swiper-full .swiper-slide {
+    width: 200px;
+    height: 200px;
+}
+#Partners .swiper-full .swiper-slide img{
+    width: 200px;
+    height: 200px;
+}
+#Partners .swiper-pagination{
+    background-color: var(--light-color);
+}
+#Partners .swiper-pagination-bullet-active{
+    background-color: var(--yellow-color);
+    
+}
+
+/* -------------------- Schedule -------------------- */
+#Schedule{
+    background-color: var(--dark-color);
+    background-image: url('../images/Background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:150%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
+    color: var(--light-color);
+}
+#Schedule img{
+    width: 500px;
+}
+#Schedule button{
+    background-color: var(--yellow-color);
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* -------------------- Testimonial -------------------- */
+#Testimonials{
+    /* height: 100vh; */
+    background-color: var(--light-color);
+    padding-bottom: 20px;
+}
+#Testimonials .divTitle{
+    color: var(--yellow-color);
+    text-align: center;
+    padding: 50px 0px;
+}
+#Testimonials .swiper-full{
+    align-items: center;
+}
+#Testimonials .swiper-full .swiper-slide{
+    /* width: 200px;
+    height: 200px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+#Testimonials .swiper-full .swiper-slide img{
+    height: auto;
+    max-height: 500px;
+}
+#Testimonials .swiper-pagination{
+    background-color: var(--light-color);
+}
+#Testimonials .swiper-pagination-bullet-active{
+    background-color: var(--yellow-color);
+    
+}
+
+
+/* -------------------- Soon -------------------- */
+#Soon{
+    /* height: 100vh; */
+    background-color: var(--yellow-color);
+    padding-bottom: 50px;
+}
+#Soon .divTitle{
+    color: var(--light-color);
+    text-align: center;
+    padding: 50px 0px;
+}
+#Soon .soonRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------- Footer -------------------- */
+#Footer{
+    background-color: var(--dark-color);
+    height: 30vh;
 }
