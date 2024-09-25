@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة باللغتين</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>
+        <a href="#">الصفحة الرئيسية</a>
+        <a href="#">من نحن</a>
+        <a href="#">الخدمات</a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">اللغة</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="setLanguage('ar')">العربية</a>
+            <a href="#" onclick="setLanguage('en')">English</a>
+        </div>
+    </div>
+</nav>
+
+<section id="content">
+    <h1>مرحبا بك في موقعنا</h1>
+    <p>هذا هو محتوى الصفحة باللغة العربية. اختر اللغة من القائمة لتغييرها.</p>
+</section>
+
+<script>
+    function setLanguage(lang) {
+        const content = document.getElementById('content');
+        if (lang === 'ar') {
+            document.documentElement.setAttribute('lang', 'ar');
+            document.documentElement.setAttribute('dir', 'rtl');
+            content.innerHTML = `
+                <h1>مرحبا بك في موقعنا</h1>
+                <p>هذا هو محتوى الصفحة باللغة العربية. اختر اللغة من القائمة لتغييرها.</p>
+            `;
+        } else if (lang === 'en') {
+            document.documentElement.setAttribute('lang', 'en');
+            document.documentElement.setAttribute('dir', 'ltr');
+            content.innerHTML = `
+                <h1>Welcome to our website</h1>
+                <p>This is the content of the page in English. Select a language from the menu to change it.</p>
+            `;
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* -------------------- Vars -------------------- */
+:root {
+    --dark-color: #2c2c2c;
+    --yellow-color: #FFCA0A;
+    --light-color: white;
+}
+/* General */
+body{
+    margin: 0px;
+}
+.container_padding{
+    padding: 0px 15%;
+}
+
+/* -------------------- Nav Bar -------------------- */
+nav{
+    background-color: var(--dark-color);
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--light-color);
+}
+.navbar{
+    padding: 10px 15%;
+
+}
+nav a{
+    color: var(--light-color);
+}
+nav .logo img{
+    max-width: 180px;
+}
+.nav-link{
+    color: var(--light-color);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: var(--yellow-color);
+}
+nav .btn {
+    color:var(--yellow-color);
+    /* background-color: var(--yellow-color); */
+    border-color: var(--yellow-color);
+}
+
+nav .btn:hover {
+    color:black;
+    background-color:var(--yellow-color);
+    border-color: var(--yellow-color);
+}
+
+
+/* -------------------- Home Section -------------------- */
+#Home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: var(--light-color);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Slider Background */
+.bg-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    animation: slide 15s infinite;
+}
+
+/* Animation for changing background images */
+@keyframes slide {
+    0% { background-image: url('../images/Home1.png'); }
+    33% { background-image: url('../images/Home1.png'); }
+    66% { background-image: url('../images/Home1.png'); }
+    100% { background-image: url('../images/Home1.png'); }
+}
+
+/* Text Styling */
+#Home h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+#Home p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+}
+
+/* Add a slight overlay to make the text more visible */
+#Home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+#Home .content{
+    width: 50%;
+}
+
+
+/* -------------------- Services Waste Section -------------------- */
+#Services_Waste{
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--light-color);
+
+}
+
+#Services_Waste .serviceBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#Services_Waste .image_frame{
+    background-color: var(--dark-color);
+    padding: 15px;
+    width: 45%;
+    border-radius: 20px 0px 20px 0px;
+}
+#Services_Waste .text_frame{
+    width: 45%;
+}
+#Services_Waste .text_frame h2{
+    font-weight: bolder;
+}
+#Services_Waste .image_frame img{
+    width: 100%;
+    max-height: 380px;
+
+}
+
+/* -------------------- Services Electronic Section -------------------- */
+#Services_Electronic{
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+
+}
+
+#Services_Electronic .serviceBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#Services_Electronic .image_frame{
+    background-color: var(--yellow-color);
+    padding: 15px;
+    width: 45%;
+    border-radius: 20px 0px 20px 0px;
+}
+#Services_Electronic .text_frame{
+    width: 45%;
+}
+#Services_Electronic .text_frame h2{
+    font-weight: bolder;
+}
+#Services_Electronic .image_frame img{
+    width: 100%;
+    max-height: 380px;
+
+}
+
+
+/* -------------------- Bekia Packages -------------------- */
+#Bekia_Packages{
+    height: 90vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Bekia_Packages .packageTitle{
+    color: var(--yellow-color);
+    font-weight: bolder; 
+    text-align: center;  
+}
+#Bekia_Packages .packageBoxContainer{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#Bekia_Packages .packageBoxContainer .package_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+    padding: 50px 50px;
+    height: max-content;
+    width: 350px;
+    margin: 0px 10px;
+}
+#Bekia_Packages .packageBoxContainer .package_box img{
+    width: 130px;
+}
+#Bekia_Packages .packageBoxContainer .package_box .packageFeature{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 395px;
+}
+#Bekia_Packages .packageBoxContainer .package_box .packageFeature .checkrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 0px;
+}
+#Bekia_Packages .packageBoxContainer .package_box .packageFeature .checkrow img{
+    width: 15px;
+    margin: 5px;
+}
+#Bekia_Packages .packageBoxContainer .bookNowButton{
+    background-color: var(--yellow-color);
+    color: var(--dark-color);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+}

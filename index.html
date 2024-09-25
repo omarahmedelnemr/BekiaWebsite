@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bekia Pay</title>
+        <meta charset="utf-8">
+        <meta name="description" content="BekiaPay Website">
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="./styles/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="./styles/fontawesome.min.css"/> -->
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="./styles/style.css"> 
+    </head>
+    <body>
+        <!-- NavBar -->
+        <nav class="navbar  navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/images/logo.svg"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse ms-auto navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#serv_collect">Collecting</a></li>
+                            <li><a class="dropdown-item" href="#serv_aware">Awareness</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Sustainability</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-globe"></i> Arabic
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-outline-success" type="submit">Schedule a visit</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="Home">
+            <div class="bg-slider"></div>
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>BekyaPay</h1>
+                <p>BekyaPay is a tech-driven startup transforming waste management in Egypt through sustainable practices. We connect businesses and individuals to efficient recycling services, our mission is to promote sustainability, reduce landfill waste, and create a cleaner environment through smart technology and community engagement.</p>
+            </div>
+        </section>
+
+        <!-- Services Waste Section -->
+        <section id="Services_Waste" class="container_padding">
+            <div class="serviceBox">
+                <div class="text_frame">
+                    <h2>Collecting Solid Waste</h2>
+                    <p>Bekyapay provides an innovative solution for collecting non-hazardous solid waste from institutions and homes, offering a passive income in the form of cash or food commodities. This model encourages responsible waste management while giving households an extra income stream to help with expenses. For businesses, including restaurants, hypermarkets, and schools, Bekyapay’s services contribute to cleaner environments while promoting sustainable practices. By turning waste into a valuable resource, the company helps both individuals and institutions reduce environmental impact and improve financial stability. </p>
+                </div>
+                <div class="image_frame">
+                    <img src="./images/service_waste1.png"/>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <div class="image_frame">
+                    <img src="/images/service_waste2.png"/>
+                </div>
+                <div class="text_frame">
+                    <h2>Raising Awareness About Waste Separation</h2>
+                    <p>Bekyapay is committed to raising awareness about the importance of waste separation, particularly among youth. Through collaborations with schools and universities, the company organizes workshops and educational events focused on teaching students how to separate recyclable, organic, and non-recyclable waste. By engaging young people, Bekyapay fosters a culture of sustainability and responsibility that extends to their homes and communities. These efforts aim to inspire the next generation to adopt environmentally friendly habits, ultimately contributing to a cleaner and more sustainable future.</p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Services Electronic Section -->
+        <section id="Services_Electronic" class="container_padding">
+            <div class="serviceBox">
+                <div class="text_frame">
+                    <h2>Reusing Electronic Devices</h2>
+                    <p>Bekyapay advocates for the reuse of electronic devices to reduce e-waste and its environmental impact. Many discarded electronics can be repaired or repurposed, extending their lifespan and reducing the need for new production. By promoting reuse, the company helps minimize the disposal of hazardous materials like lead and mercury, which can harm the environment. bBekyapay encourages individuals and businesses to explore reuse options for their electronics, ensuring that working devices are either passed on or recycled responsibly, contributing to sustainable electronic waste management.</p>
+                </div>
+                <div class="image_frame">
+                    <img src="./images/service_elec1.png"/>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <div class="image_frame">
+                    <img src="/images/service_elec2.png"/>
+                </div>
+                <div class="text_frame">
+                    <h2>The Importance of Furniture Reuse</h2>
+                    <p>Bekyapay promotes the reuse of furniture to reduce waste and environmental harm. Instead of discarding usable furniture, the company encourages donation, resale, or repurposing, which helps extend its lifecycle. This reduces the need for new resources and energy for production, while also lowering deforestation and pollution linked to manufacturing. By raising awareness around furniture reuse, bBekyapay makes it easier for individuals and businesses to contribute to sustainability. Through these efforts, the company supports a circular economy and reduces the burden on landfills.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bekia Packages -->
+        <section id="Bekia_Packages" class="container_padding">
+            <div class="packageTitle">
+                <h1>Bekia Packages</h1>
+                <h3>Tell us About Your Package With Bekia</h3>
+            </div>
+            <div class="packageBoxContainer">
+                <div class="package_box">
+                    <h3>Bank Package</h3>
+                    <img src="./images/bank 1.svg"/>
+                    <div class="packageFeature">
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>Your order is Recieved</span>
+                        </div>
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>The quantity is weighed at each visit within 3-6 months.</span>
+                        </div>
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>You will receive a savings card with each visit and the amount received over the period specified with the customer.</span>
+                        </div>
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>The quantity is calculated on the total collected quantity and not per visit, with an addition of 20%.</span>
+                        </div>
+                    </div>
+
+                    <button class="bookNowButton">Book Now</button>
+                </div>
+                <div class="package_box">
+                    <h3>Cash Package</h3>
+                    <img src="./images/casch 1.svg"/>
+                    <div class="packageFeature">
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>Your order is Recieved</span>
+                        </div>
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>The quantity is weighed</span>
+                        </div>
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>Calculate through any of your wallets or the nearest transfer location to you</span>
+                        </div>
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>The price is fixed for the quantity</span>
+                        </div>
+                    </div>
+
+                    <button class="bookNowButton">Book Now</button>
+                </div>
+                <div class="package_box">
+                    <h3>Wallet Package</h3>
+                    <img src="./images/Clip path group.svg"/>
+                    <div class="packageFeature">
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>Your order is Recieved</span>
+                        </div>
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>The quantity is weighed at each visit during the month</span>
+                        </div>
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>You will receive a savings card with each visit and the amount received throughout the month written on it</span>
+                        </div>
+                        <div class="checkrow">
+                            <img src="./icons/Icon.svg" />
+                            <span>The quantity is calculated based on the total collected quantity and not per visit, meaning that the entire month’s quantity is calculated as one visit</span>
+                        </div>
+                    </div>
+
+                    <button class="bookNowButton">Book Now</button>
+                </div>
+                
+            </div>
+        </section>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+        <script src="./js/bootstrap.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <!-- <script src="./js/jquery.js"></script> -->
+    </body>
+</html>
