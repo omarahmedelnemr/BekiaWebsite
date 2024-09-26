@@ -413,10 +413,10 @@ nav .btn:hover {
     color: var(--yellow-color);
     text-align: center;
 }
-#Sponsers .swiper-full .swiper-slide {
+#Sponsers .swiper-full .swiper-slide img{
     width: 200px;
+    height: auto;
 }
-
 #Sponsers .swiper-pagination{
     background-color: var(--light-color);
 }
@@ -442,7 +442,7 @@ nav .btn:hover {
 }
 #Partners .swiper-full .swiper-slide img{
     width: 200px;
-    height: 200px;
+    height: auto;
 }
 #Partners .swiper-pagination{
     background-color: var(--light-color);
