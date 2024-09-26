@@ -281,6 +281,14 @@ nav .btn:hover {
     margin: 50px 0px;
 }
 
+#Collected_waste .slider-buttons button{
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+}
+#Collected_waste .slider-buttons button::before{
+    background: black;
+}
 
 /* -------------------- Events -------------------- */
 #Events{
