@@ -20,24 +20,22 @@
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="./styles/bootstrap.min.css" rel="stylesheet" >
+        <!-- <link href="./styles/bootstrap.min.css" rel="stylesheet" > -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- <link rel="stylesheet" href="./styles/fontawesome.min.css"/> -->
+        <link rel="stylesheet" href="./styles/fontawesome.min.css"/>
         <link rel="icon" href="images/favicon.ico">
         <link rel="stylesheet" href="./styles/Slider3D.css"> 
         <link rel="stylesheet" href="./styles/Slider.css"> 
+        <link rel="stylesheet" href="./styles/navbar.css"> 
         <link rel="stylesheet" href="./styles/FlipCard.css"> 
         <link rel="stylesheet" href="./styles/style.css"> 
     </head>
     <body>
 
         <!-- NavBar -->
-        <nav class="navbar  navbar-expand-lg">
+        <!-- <nav class="navbar  navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="/images/logo.svg"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,6 +91,48 @@
                     </form>
                 </div>
             </div>
+        </nav> -->
+
+        <nav>
+            <ul>
+                <img src="./images/logo.svg"/>
+                <div id="resbar" class= "bar "><i class = "fa fa-bars"></i></div>
+                <div id = "navItems" class = "nav-items">
+                    <li><a href="#Home">Home</a></li>
+                    <li class="dropDown">Services <i class = "fa fa-arrow-down"></i>
+                        <ul>
+                            <li>
+                                <a href="#Services_Waste">Waste</a>
+                            </li>
+                            <li>
+                                <a href="#Services_Electronic">Electronices</a>
+                            </li>
+                            <li>
+                                <a href="#Services_Electronic">Electronices</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#Bekia_Packages">Packages</a></li>
+                    <li class="dropDown">About
+                        <ul>
+                            <li>
+                                <a href="#Events">Events</a>
+                            </li>
+                            <li>
+                                <a href="#About">Mission & Vision</a>
+                            </li>
+                            <li>
+                                <a href="#Team">Team</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#Sustainability">Sustainability</a></li>
+                    <li><a href="#">EN</a></li>
+
+                </div>
+            </ul>
         </nav>
 
         <!-- Home Section -->
@@ -189,7 +229,7 @@
                             <img src="./icons/Icon.svg" />
                             <span>Your order is Recieved</span>
                         </div>
-                        <div class="checkrow">
+                        <div class="checkrsow">
                             <img src="./icons/Icon.svg" />
                             <span>The quantity is weighed</span>
                         </div>
@@ -440,7 +480,7 @@
             <div>
                 <img src="./images/Eye.svg"/>
             </div>
-            <div>
+            <div class="text">
                 <h1 class="bold_title">Schedule a visit now</h1>
                 <h2 >If you have a waste and need to get red of fill in this form</h2>
                 <button>Register</button>
@@ -484,12 +524,45 @@
 
         <!-- Footer -->
         <section id="Footer" class="container_padding">
-
+            <div class="left">
+                <div>
+                    <img src="./images/logo.svg"/>
+                </div>
+                <div class="iconRow">
+                    <a><img src="./icons/Facebook.svg"/></a>
+                    <a><img src="./icons/Instagram.svg"/></a>
+                    <a><img src="./icons/Linkedin.svg"/></a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="infoBox">
+                    <h3 class="bold_title">Address</h3>
+                    <p>398 برج الفنار, ش أبو قير الرئيسي, مصطفي كامل, سيدي جابر الأسكندرية</p>
+                </div>
+                <div class="infoBox">
+                    <h3 class="bold_title">Contact Us</h3>
+                    <div class="contactRow">
+                        <img src="./icons/email.svg"/>
+                        <span>bekyapay@gmail.com</span>
+                    </div>
+                    <div class="contactRow"></div>
+                        <img src="./icons/whatsapp.svg"/>
+                        <span>+20 1229427013</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+        <!-- Terms -->
+        <section id="Terms" class="container_padding">
+            <a>Terms & Conditions</a>
+            <span>©2021 BekyaPay LLC.</span>
+        </section>
 
+        <!-- Scripts -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
         <script src="./js/bootstrap.js"></script>
+        <script src="./js/navbar.js"></script>
         <script src="./js/Slider3D.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -31,6 +31,53 @@ nav{
     align-items: center;
     color: var(--light-color);
 }
+nav ul{
+    margin: 0px;
+}
+nav .dropDown{
+    position: relative;
+}
+nav .dropDown *{
+    transition: 0.2s;
+}
+nav .dropDown ul{
+    display: flex;
+    display: none;
+    position: absolute;
+    background-color: var(--light-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-color);
+    width: max-content;
+    height: max-content;
+
+    padding: 5px;
+}
+nav .dropDown:hover ul{
+    display: flex;
+}
+nav .dropDown ul li{
+    list-style-type: none;
+    color: var(--dark-color);
+    cursor: pointer;
+    padding: 5px;
+    margin: 1px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+nav .dropDown ul li:hover{
+    background-color: var(--dark-color);
+}
+nav .dropDown ul li:hover a{ 
+    color: var(--light-color);
+}
+nav .dropDown ul a{
+    color: var(--dark-color);
+    text-decoration: none;
+
+}
 .navbar{
     padding: 10px 15%;
 
@@ -121,28 +168,36 @@ nav .btn:hover {
 
 /* -------------------- Services Waste Section -------------------- */
 #Services_Waste{
-    height: 110vh;
+    min-height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: var(--light-color);
-
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #Services_Waste .serviceBox{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: flex-start;
+    margin: 10px 0px;
 }
 #Services_Waste .image_frame{
     background-color: var(--dark-color);
     padding: 15px;
-    width: 45%;
     border-radius: 20px 0px 20px 0px;
+    min-width: 380px;
+    flex: 1 1 45%;                 /* Responsive size: grow, shrink, with a base size of 200px */
+
+
 }
 #Services_Waste .text_frame{
-    width: 45%;
+    flex: 1 1 45%;                 /* Responsive size: grow, shrink, with a base size of 200px */
+    min-width: 380px;
+    margin: 0px 10px;
 }
 #Services_Waste .text_frame h2{
     font-weight: bolder;
@@ -150,41 +205,50 @@ nav .btn:hover {
 #Services_Waste .image_frame img{
     width: 100%;
     max-height: 380px;
+    border-radius: 18px 0px 18px 0px;
 
 }
 
 /* -------------------- Services Electronic Section -------------------- */
 #Services_Electronic{
-    height: 110vh;
+    min-height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: var(--dark-color);
     color: var(--light-color);
-
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #Services_Electronic .serviceBox{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 10px 0px;
 }
 #Services_Electronic .image_frame{
     background-color: var(--yellow-color);
     padding: 15px;
-    width: 45%;
     border-radius: 20px 0px 20px 0px;
+    min-width: 380px;
+    flex: 1 1 45%;                 /* Responsive size: grow, shrink, with a base size of 200px */
 }
 #Services_Electronic .text_frame{
-    width: 45%;
+    flex: 1 1 45%;                 /* Responsive size: grow, shrink, with a base size of 200px */
+    min-width: 380px;
+    margin: 0px 10px;
 }
+
 #Services_Electronic .text_frame h2{
     font-weight: bolder;
 }
 #Services_Electronic .image_frame img{
     width: 100%;
     max-height: 380px;
+    border-radius: 18px 0px 18px 0px;
 
 }
 
@@ -393,6 +457,7 @@ nav .btn:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #Sustainability .calculations .sustain_calculations{
@@ -439,6 +504,7 @@ nav .btn:hover {
 #Partners .swiper-full .swiper-slide {
     width: 200px;
     height: 200px;
+    margin: 0px 10px;
 }
 #Partners .swiper-full .swiper-slide img{
     width: 200px;
@@ -455,30 +521,39 @@ nav .btn:hover {
 /* -------------------- Schedule -------------------- */
 #Schedule{
     background-color: var(--dark-color);
-    background-image: url('../images/Background.svg');
+    background-image: url(../images/Background.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:150%;
+    background-size: 150%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    /* padding-top: 200px;
-    padding-bottom: 200px; */
+    min-height: 50vh;
     color: var(--light-color);
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #Schedule img{
     width: 500px;
 }
-#Schedule button{
+#Schedule .text{
+    min-width: 220px;
+    max-width: 500px;
+}
+#Schedule .text button{
     background-color: var(--yellow-color);
     padding: 10px 40px;
     border: none;
     cursor: pointer;
     border-radius: 10px;
 }
-
+@media (max-width:1440px) {
+    #Schedule .text{
+        text-align: center;
+    }
+}
 /* -------------------- Testimonial -------------------- */
 #Testimonials{
     /* height: 100vh; */
@@ -501,6 +576,7 @@ nav .btn:hover {
     align-items: center;
     justify-content: center;
     height: 500px;
+    margin: 0px 10px;
 }
 #Testimonials .swiper-full .swiper-slide img{
     height: auto;
@@ -536,5 +612,53 @@ nav .btn:hover {
 /* -------------------- Footer -------------------- */
 #Footer{
     background-color: var(--dark-color);
-    height: 30vh;
+    color: var(--light-color);
+    min-height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#Footer h3{
+    color: var(--yellow-color);
+}
+#Footer .left{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+#Footer .left .iconRow{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#Footer .right{
+    display: flex;
+    flex-direction: row;
+}
+#Footer .right .infoBox{
+    max-width: 200px;
+}
+
+/* -------------------- Terms -------------------- */
+#Terms{
+    height: 5vh;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#Terms a{
+    color: var(--light-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+#Terms span{
+    margin: 0px 50px;
 }
