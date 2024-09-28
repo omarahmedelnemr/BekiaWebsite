@@ -35,77 +35,19 @@
     <body>
 
         <!-- NavBar -->
-        <!-- <nav class="navbar  navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/images/logo.svg"/></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse ms-auto navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#Services_Waste">Waste</a></li>
-                            <li><a class="dropdown-item" href="#Services_Electronic">Electronics</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"></li>
-                            <a class="nav-link" aria-disabled="true" href="#Bekia_Packages">Packages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Sustainability</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Contact Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-globe"></i> Arabic
-                            </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">Arabic</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    
-                    <form class="d-flex" role="search">
-                        <button class="btn btn-outline-success" type="submit">Schedule a visit</button>
-                    </form>
-                </div>
-            </div>
-        </nav> -->
-
         <nav>
             <ul>
                 <img src="./images/logo.svg"/>
                 <div id="resbar" class= "bar "><i class = "fa fa-bars"></i></div>
                 <div id = "navItems" class = "nav-items">
                     <li><a href="#Home">Home</a></li>
-                    <li class="dropDown">Services <i class="fa-solid fa-chevron-down"></i>
+                    <li class="dropDown">
+                        <div class="header">
+                            Services <i class="fa-solid fa-chevron-down"></i>
+                        </div>
                         <ul>
                             <li>
                                 <a href="#Services_Waste">Waste</a>
-                            </li>
-                            <li>
-                                <a href="#Services_Electronic">Electronices</a>
                             </li>
                             <li>
                                 <a href="#Services_Electronic">Electronices</a>
@@ -114,7 +56,10 @@
                         </ul>
                     </li>
                     <li><a href="#Bekia_Packages">Packages</a></li>
-                    <li class="dropDown">About <i class="fa-solid fa-chevron-down"></i>
+                    <li class="dropDown">
+                        <div class="header">
+                            About <i class="fa-solid fa-chevron-down"></i>
+                        </div>
                         <ul>
                             <li>
                                 <a href="#Events">Events</a>
@@ -128,8 +73,15 @@
 
                         </ul>
                     </li>
-                    <li><a href="#Sustainability">Sustainability</a></li>
-                    <li><a href="#"><i class="fa-solid fa-globe"></i> EN</a></li>
+                    <li>
+                        <a href="#Sustainability">Sustainability</a>
+                    </li>
+                    <li class="langButton">
+                        <a href="#">
+                            <i class="fa-solid fa-globe"></i>
+                            EN
+                        </a>
+                    </li>
 
                 </div>
             </ul>
@@ -191,7 +143,7 @@
         </section>
 
         <!-- Bekia Packages -->
-        <section id="Bekia_Packages" class="container_padding">
+        <section id="Bekia_Packages" class="">
             <div class="packageTitle">
                 <h1 class="bold_title">Bekia Packages</h1>
                 <h3>Tell us About Your Package With Bekia</h3>
@@ -199,7 +151,7 @@
             <div class="packageBoxContainer">
                 <div class="package_box">
                     <h3>Bank Package</h3>
-                    <img src="./images/bank 1.svg"/>
+                    <img class="packageImage" src="./images/bank 1.svg"/>
                     <div class="packageFeature">
                         <div class="checkrow">
                             <img src="./icons/Icon.svg" />
@@ -223,13 +175,13 @@
                 </div>
                 <div class="package_box">
                     <h3>Cash Package</h3>
-                    <img src="./images/casch 1.svg"/>
+                    <img class="packageImage" src="./images/casch 1.svg"/>
                     <div class="packageFeature">
                         <div class="checkrow">
                             <img src="./icons/Icon.svg" />
                             <span>Your order is Recieved</span>
                         </div>
-                        <div class="checkrsow">
+                        <div class="checkrow">
                             <img src="./icons/Icon.svg" />
                             <span>The quantity is weighed</span>
                         </div>
@@ -247,7 +199,7 @@
                 </div>
                 <div class="package_box">
                     <h3>Wallet Package</h3>
-                    <img src="./images/wallet 1.svg"/>
+                    <img class="packageImage" src="./images/wallet 1.svg"/>
                     <div class="packageFeature">
                         <div class="checkrow">
                             <img src="./icons/Icon.svg" />
@@ -356,7 +308,7 @@
         </section>
 
         <!-- Our Team -->
-        <section id="Team" class="container_padding">
+        <section id="Team" class="">
             <div class="teamTitle">
                 <h1 class="bold_title">Our Team Members</h1>
             </div>
