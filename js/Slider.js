@@ -37,6 +37,9 @@ $("#Sponsers .swiper-full").mouseenter(function () {
 $("#Sponsers .swiper-full").mouseleave(function () {
 	swiperFull.autoplay.start();
 });
+if ($("#Sponsers .swiper-slide").length > 1){
+	$("#Sponsers .swiper-button-next").click()
+}
 
 // For Partners
 const PartnerSwiperFull = new Swiper("#Partners .swiper-full", {
@@ -77,7 +80,9 @@ $("#Partners .swiper-full").mouseenter(function () {
 $("#Partners .swiper-full").mouseleave(function () {
 	PartnerSwiperFull.autoplay.start();
 });
-
+if ($("#Partners .swiper-slide").length > 1){
+	$("#Partners .swiper-button-next").click()
+}
 
 // For Testimonials
 const TestimonialsSwiperFull = new Swiper("#Testimonials .swiper-full", {
@@ -90,7 +95,7 @@ const TestimonialsSwiperFull = new Swiper("#Testimonials .swiper-full", {
 	loop: true,
 	pagination: {
 		el: "#Testimonials .swiper-pagination",
-		// dynamicBullets: true,
+		dynamicBullets: true,
 		clickable: true,
 		renderBullet: function (index, className) {
 			return '<span class="' + className + '">' + (index + 1) + "</span>";
@@ -118,7 +123,9 @@ $("#Testimonials .swiper-full").mouseenter(function () {
 $("#Testimonials .swiper-full").mouseleave(function () {
 	TestimonialsSwiperFull.autoplay.start();
 });
-
+if ($("#Testimonials .swiper-slide").length > 1){
+	$("#Testimonials .swiper-button-next").click()
+}
 
 // For Events
 const EventsSwiperFull = new Swiper("#Events .swiper-full", {
@@ -160,3 +167,6 @@ $("#Events .swiper-full").mouseenter(function () {
 $("#Events .swiper-full").mouseleave(function () {
 	EventsSwiperFull.autoplay.start();
 });
+if ($("#Events .swiper-slide").length > 1){
+	$("#Events .swiper-button-next").click()
+}
