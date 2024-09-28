@@ -26,16 +26,6 @@ body{
     }
 }
 
-.EN{
-    /* display: none !important; */
-}
-.AR{
-    /* display: none !important; */
-}
-.language_directed_section{
-    /* direction: rtl; */
-}
-
 /* -------------------- Nav Bar -------------------- */
 nav{
     background-color: var(--dark-color);
