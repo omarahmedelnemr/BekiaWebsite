@@ -32,7 +32,7 @@
         <link rel="stylesheet" href="./styles/FlipCard.css"> 
         <link rel="stylesheet" href="./styles/style.css"> 
     </head>
-    <body>
+    <body id="content">
 
         <!-- NavBar -->
         <nav>
@@ -76,10 +76,10 @@
                     <li>
                         <a href="#Sustainability">Sustainability</a>
                     </li>
-                    <li class="langButton">
+                    <li class="langButton" onclick="changeLange()">
                         <a href="#">
+                            عربي
                             <i class="fa-solid fa-globe"></i>
-                            EN
                         </a>
                     </li>
 
@@ -287,6 +287,34 @@
         <section id="Events" class="container_padding">
             <div class="eventTitle">
                 <h1 class="bold_title">Events We particpated in</h1>
+            </div>
+            <!-- <div> -->
+                <!-- Slider main container -->
+                <div class="Slider">
+                    <div class="swiper-full">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/Events 1.png" alt="Tech Invest" class="img-fluid" />
+                                Tech Invest
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/Events 1.png" alt="Tech Invest" class="img-fluid" />
+                                Tech Invest
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/Events 1.png" alt="Tech Invest" class="img-fluid" />
+                                Tech Invest
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/Events 1.png" alt="Tech Invest" class="img-fluid" />
+                                Tech Invest
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                <!-- </div> -->
             </div>
         </section>
         
@@ -497,7 +525,7 @@
                         <img src="./icons/email.svg"/>
                         <span>bekyapay@gmail.com</span>
                     </div>
-                    <div class="contactRow"></div>
+                    <div class="contactRow">
                         <img src="./icons/whatsapp.svg"/>
                         <span>+20 1229427013</span>
                     </div>
@@ -519,6 +547,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./js/Slider.js"></script>
+        <script src="./js/index.js"></script>
         <!-- <script src="./js/jquery.js"></script> -->
     </body>
 </html>

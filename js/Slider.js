@@ -18,7 +18,18 @@ const swiperFull = new Swiper("#Sponsers .swiper-full", {
 	navigation: {
 		nextEl: "#Sponsers .swiper-button-next",
 		prevEl: "#Sponsers .swiper-button-prev"
-	}
+	}, breakpoints: {
+        // When window width is <= 767px (typically for mobile)
+        767: {
+            slidesPerView: 4, 
+            centeredSlides: true, 
+        },
+        // When window width is <= 1130 (for tablets and small desktops)
+        1130: {
+            slidesPerView: 5, 
+            centeredSlides: true, 
+        }
+    }
 });
 $("#Sponsers .swiper-full").mouseenter(function () {
 	swiperFull.autoplay.stop();
@@ -32,7 +43,7 @@ const PartnerSwiperFull = new Swiper("#Partners .swiper-full", {
 	autoplay: {
 		delay: 2000
 	},
-	slidesPerView: 5,
+	slidesPerView: 3,
 	centeredSlides: true,
 	spaceBetween: 32,
 	loop: true,
@@ -47,7 +58,18 @@ const PartnerSwiperFull = new Swiper("#Partners .swiper-full", {
 	navigation: {
 		nextEl: "#Partners .swiper-button-next",
 		prevEl: "#Partners .swiper-button-prev"
-	}
+	}, breakpoints: {
+        // When window width is <= 767px (typically for mobile)
+        767: {
+            slidesPerView: 4, 
+            centeredSlides: true, 
+        },
+        // When window width is <= 1130 (for tablets and small desktops)
+        1130: {
+            slidesPerView: 5, 
+            centeredSlides: true, 
+        }
+    }
 });
 $("#Partners .swiper-full").mouseenter(function () {
 	PartnerSwiperFull.autoplay.stop();
@@ -60,9 +82,9 @@ $("#Partners .swiper-full").mouseleave(function () {
 // For Testimonials
 const TestimonialsSwiperFull = new Swiper("#Testimonials .swiper-full", {
 	autoplay: {
-		delay: 2000
+		delay: 4000
 	},
-	slidesPerView: 3,
+	slidesPerView: 2,
 	centeredSlides: true,
 	spaceBetween: 32,
 	loop: true,
@@ -77,11 +99,64 @@ const TestimonialsSwiperFull = new Swiper("#Testimonials .swiper-full", {
 	navigation: {
 		nextEl: "#Testimonials .swiper-button-next",
 		prevEl: "#Testimonials .swiper-button-prev"
-	}
+	}, breakpoints: {
+        // When window width is <= 767px (typically for mobile)
+        767: {
+            slidesPerView: 2, 
+            centeredSlides: true, 
+        },
+        // When window width is <= 1130 (for tablets and small desktops)
+        1130: {
+            slidesPerView: 3, 
+            centeredSlides: true, 
+        }
+    }
 });
 $("#Testimonials .swiper-full").mouseenter(function () {
 	TestimonialsSwiperFull.autoplay.stop();
 });
 $("#Testimonials .swiper-full").mouseleave(function () {
 	TestimonialsSwiperFull.autoplay.start();
+});
+
+
+// For Events
+const EventsSwiperFull = new Swiper("#Events .swiper-full", {
+	autoplay: {
+		delay: 2000
+	},
+	slidesPerView: 1,
+	centeredSlides: true,
+	spaceBetween: 32,
+	loop: true,
+	pagination: {
+		el: "#Events .swiper-pagination",
+		// dynamicBullets: true,
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + (index + 1) + "</span>";
+		}
+	},
+	navigation: {
+		nextEl: "#Events .swiper-button-next",
+		prevEl: "#Events .swiper-button-prev"
+	},
+    breakpoints: {
+        // When window width is <= 767px (typically for mobile)
+        767: {
+            slidesPerView: 2, 
+            centeredSlides: true,
+        },
+        // When window width is <= 1024px (for tablets and small desktops)
+        1130: {
+            slidesPerView: 3,
+            centeredSlides: true, // Enable centered slides
+        }
+    }
+});
+$("#Events .swiper-full").mouseenter(function () {
+	EventsSwiperFull.autoplay.stop();
+});
+$("#Events .swiper-full").mouseleave(function () {
+	EventsSwiperFull.autoplay.start();
 });

@@ -13,7 +13,7 @@ body{
     margin: 0px;
 }
 .container_padding{
-    padding: 0px 15%;
+    padding: 0px 10%;
 }
 
 .bold_title{
@@ -220,7 +220,7 @@ nav .btn:hover {
     border-radius: 20px 0px 20px 0px;
     min-width: 380px;
     flex: 1 1 45%;                 /* Responsive size: grow, shrink, with a base size of 200px */
-
+    margin-bottom: 20px;
 
 }
 #Services_Waste .text_frame{
@@ -264,6 +264,7 @@ nav .btn:hover {
     border-radius: 20px 0px 20px 0px;
     min-width: 380px;
     flex: 1 1 45%;                 /* Responsive size: grow, shrink, with a base size of 200px */
+    margin-bottom: 20px;
 }
 #Services_Electronic .text_frame{
     flex: 1 1 45%;                 /* Responsive size: grow, shrink, with a base size of 200px */
@@ -314,7 +315,7 @@ nav .btn:hover {
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 10px gray;
-    border-radius: 5px;
+    border-radius: 25px ;
     padding: 50px 50px;
     height: max-content;
     width: 350px;
@@ -385,14 +386,22 @@ nav .btn:hover {
 
 /* -------------------- Events -------------------- */
 #Events{
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--dark-color);
+    padding-bottom: 50px;
 }
 #Events .eventTitle{
     color: var(--yellow-color);
     font-weight: bolder;
     text-align: center;
     padding: 50px 0px;
+}
+
+#Events .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    color: var(--light-color);
+    font-size: 30px;
 }
 
 
@@ -565,7 +574,7 @@ nav .btn:hover {
     padding-bottom: 50px;
 }
 #Schedule img{
-    max-width: 500px;
+    max-width: 400px;
 }
 #Schedule .text{
     min-width: 220px;
@@ -582,6 +591,12 @@ nav .btn:hover {
     #Schedule .text{
         text-align: center;
     }
+}
+@media (max-width:570px) {
+    #Schedule img{
+    
+        width: 300px;
+    }    
 }
 /* -------------------- Testimonial -------------------- */
 #Testimonials{
@@ -639,7 +654,7 @@ nav .btn:hover {
     justify-content: center;
 }
 #Soon .soonRow img{
-    width: 100%;
+    /* width: 100%; */
 }
 @media (max-width:700px){
     #Soon .soonRow img{
@@ -681,8 +696,16 @@ nav .btn:hover {
 }
 #Footer .right .infoBox{
     max-width: 200px;
+    margin: 0px 10px;
 }
-
+#Footer .right .infoBox .contactRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#Footer .right .infoBox .contactRow img{
+    margin: 0px 5px;
+}
 /* -------------------- Terms -------------------- */
 #Terms{
     height: 5vh;
