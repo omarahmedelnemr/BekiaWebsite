@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* -------------------- Vars -------------------- */
 :root {
     --dark-color: #2c2c2c;
@@ -12,11 +13,26 @@
 body{
     margin: 0px;
     display: none;
+
 }
 .container_padding{
     padding: 0px 10%;
 }
+*{
+    /* font-family: Inter, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal; */
+    /* font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; */
 
+    /* font-family: "Inter", "El Messiri", sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 .bold_title{
     font-weight: bolder;
 }
@@ -24,6 +40,13 @@ body{
     body{
         zoom:0.7;
     }
+}
+.AR{
+    font-family: "El Messiri", sans-serif;
+
+}
+.EN{
+    font-family: "Montserrat", sans-serif;
 }
 
 /* -------------------- Nav Bar -------------------- */
@@ -37,7 +60,9 @@ nav{
     align-items: center;
     color: var(--light-color);
 }
-
+nav #resbar i{
+    font-size: 25px;
+}
 nav ul{
     margin: 0px;
 }
@@ -105,7 +130,7 @@ nav .langButton a{
     align-items: center;
     flex-wrap: nowrap;
 }
-nav i{
+nav #navItems i{
     font-size: 14px;
     margin: 0px 10px;
 }
@@ -251,6 +276,20 @@ nav .btn:hover {
 
 }
 
+@media (max-width:1000px){
+    #Services_Waste .serviceBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 10px 0px; */
+    }
+    #Services_Waste .serviceBox.reverse{
+        flex-direction: column-reverse;
+    }
+}
 /* -------------------- Services Electronic Section -------------------- */
 #Services_Electronic{
     min-height: 110vh;
@@ -294,7 +333,20 @@ nav .btn:hover {
     border-radius: 18px 0px 18px 0px;
 
 }
-
+@media (max-width:1000px){
+    #Services_Electronic .serviceBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 10px 0px; */
+    }
+    #Services_Electronic .serviceBox.reverse{
+        flex-direction: column-reverse;
+    }
+}
 
 /* -------------------- Bekia Packages -------------------- */
 #Bekia_Packages{
@@ -320,6 +372,8 @@ nav .btn:hover {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 #Bekia_Packages .packageBoxContainer .package_box{
     background-color: white;
@@ -339,6 +393,9 @@ nav .btn:hover {
     transform: scale(1.05);
 
 }
+#Bekia_Packages .packageBoxContainer .package_box h3{
+    font-weight: bolder;
+}
 #Bekia_Packages .packageBoxContainer .package_box .packageImage{
     width: 130px;
 }
@@ -347,7 +404,7 @@ nav .btn:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    height: 395px;
+    min-height: 395px;
 }
 #Bekia_Packages .packageBoxContainer .package_box .packageFeature .checkrow{
     display: flex;
@@ -396,7 +453,11 @@ nav .btn:hover {
 #Collected_waste .slider-buttons button::before{
     background: black;
 }
-
+@media (max-width:250px) {
+    #Collected_waste .slider-container{
+        zoom:0.6;
+    }
+}
 /* -------------------- Events -------------------- */
 #Events{
     min-height: 100vh;
@@ -417,6 +478,27 @@ nav .btn:hover {
     font-size: 30px;
 }
 
+@media (max-width:700px){
+    #Events{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Events .Slider{
+        width: 50vh;
+    }
+}
+/* 
+@media (max-width:500px){
+    #Events{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Events .Slider{
+        width: 80vh;
+    }
+} */
 
 /* -------------------- About -------------------- */
 #About{
@@ -517,7 +599,7 @@ nav .btn:hover {
     padding: 20px;
     width: 400px;
     border-radius: 20px;
-    margin: 50px 0px;
+    margin: 20px 0px;
 }
 
 /* -------------------- Sponsers -------------------- */
@@ -720,6 +802,11 @@ nav .btn:hover {
 #Footer .right .infoBox .contactRow a{
     text-decoration: none;
     color: var(--light-color);
+}
+@media (max-width:805px){
+    #Footer .right{
+        flex-direction: column;
+    }
 }
 /* -------------------- Terms -------------------- */
 #Terms{
