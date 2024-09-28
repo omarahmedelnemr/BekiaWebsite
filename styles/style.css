@@ -803,6 +803,7 @@ nav .btn:hover {
 #Footer .right .infoBox .contactRow a{
     text-decoration: none;
     color: var(--light-color);
+    text-wrap: nowrap;
 }
 @media (max-width:805px){
     #Footer .right{
