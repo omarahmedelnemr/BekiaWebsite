@@ -717,6 +717,10 @@ nav .btn:hover {
 #Footer .right .infoBox .contactRow img{
     margin: 0px 5px;
 }
+#Footer .right .infoBox .contactRow a{
+    text-decoration: none;
+    color: var(--light-color);
+}
 /* -------------------- Terms -------------------- */
 #Terms{
     height: 5vh;
