@@ -453,7 +453,7 @@ nav .btn:hover {
 #Collected_waste .slider-buttons button::before{
     background: black;
 }
-@media (max-width:250px) {
+@media (max-width:400px) {
     #Collected_waste .slider-container{
         zoom:0.6;
     }
@@ -766,6 +766,7 @@ nav .btn:hover {
     align-items: center;
     flex-wrap: wrap;
     padding-top: 50px;
+    padding-bottom: 20px;
 }
 #Footer h3{
     color: var(--yellow-color);
@@ -810,13 +811,14 @@ nav .btn:hover {
 }
 /* -------------------- Terms -------------------- */
 #Terms{
-    height: 5vh;
+    min-height: 5vh;
     background-color: var(--dark-color);
     color: var(--light-color);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap
 }
 #Terms a{
     color: var(--light-color);
