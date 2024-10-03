@@ -456,7 +456,7 @@ nav .btn:hover {
     min-height: max-content;
     background-color: var(--yellow-color);
     padding-bottom: 50px;
-    /* height: 590px; */
+    height: 590px;
     font-family: "Inter", sans-serif;
     
 
@@ -493,6 +493,7 @@ nav .btn:hover {
     #Collected_waste .swiper-slide{
         font-size: 15px;
     }
+
 }
 @media (max-width:460px) {
     #Collected_waste  .Slider{
