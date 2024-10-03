@@ -156,7 +156,7 @@ const EventsSwiperFull = new Swiper("#Events .swiper-full", {
         },
         // When window width is <= 1024px (for tablets and small desktops)
         1130: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             centeredSlides: true, // Enable centered slides
         }
     }
@@ -167,6 +167,6 @@ $("#Events .swiper-full").mouseenter(function () {
 $("#Events .swiper-full").mouseleave(function () {
 	EventsSwiperFull.autoplay.start();
 });
-if ($("#Events .swiper-slide").length > 1){
+if ($("#Events .swiper-slide").length > 2){
 	$("#Events .swiper-button-next").click()
 }
