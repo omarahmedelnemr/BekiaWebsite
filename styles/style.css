@@ -268,6 +268,10 @@ nav .btn:hover {
 }
 #Services_Waste .text_frame h2{
     font-weight: bolder;
+    font-size: 1.5vw;
+}
+#Services_Waste .text_frame p{
+    font-size: 1.3vw;
 }
 #Services_Waste .image_frame img{
     width: 100%;
@@ -288,6 +292,12 @@ nav .btn:hover {
     }
     #Services_Waste .serviceBox.reverse{
         flex-direction: column-reverse;
+    }
+    #Services_Waste .text_frame h2{
+        font-size: 25px;
+    }
+    #Services_Waste .text_frame p{
+        font-size: 16px;
     }
 }
 /* -------------------- Services Electronic Section -------------------- */
@@ -326,6 +336,10 @@ nav .btn:hover {
 
 #Services_Electronic .text_frame h2{
     font-weight: bolder;
+    font-size: 1.5vw;
+}
+#Services_Electronic .text_frame p{
+    font-size: 1.3vw;
 }
 #Services_Electronic .image_frame img{
     width: 100%;
@@ -345,6 +359,12 @@ nav .btn:hover {
     }
     #Services_Electronic .serviceBox.reverse{
         flex-direction: column-reverse;
+    }
+    #Services_Electronic .text_frame h2{
+        font-size: 25px;
+    }
+    #Services_Electronic .text_frame p{
+        font-size: 16px;
     }
 }
 
@@ -507,6 +527,20 @@ nav .btn:hover {
     background-color: var(--light-color);
 }
 
+#About p{
+    font-size: 1.4vw;
+    line-height: 40px;
+}
+@media(max-width:1300px){
+    #About p{
+        font-size: 23px;
+    } 
+}
+@media(max-width:1000px){
+    #About p{
+        font-size: 20px;
+    } 
+}
 /* -------------------- Team -------------------- */
 #Team{
     background-color: var(--yellow-color);
@@ -601,7 +635,19 @@ nav .btn:hover {
     border-radius: 20px;
     margin: 20px 0px;
 }
-
+#Sustainability .sustain_description{
+    font-size: 1.4vw;
+}
+@media(max-width:1300px){
+    #Sustainability .sustain_description{
+        font-size: 1.6vw;
+    } 
+}
+@media(max-width:1000px){
+    #Sustainability .sustain_description{
+        font-size: 20px;
+    } 
+}
 /* -------------------- Sponsers -------------------- */
 #Sponsers{
     background-color: var(--dark-color);
