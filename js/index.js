@@ -1,3 +1,18 @@
+function isIphoneOrFallback() {
+    // Check if the device is iPhone 8 or older
+    const ua = navigator.userAgent;
+    if (/iPhone/.test(ua) && !window.CSS.supports('(-webkit-overflow-scrolling: touch)')) {
+      return true; // iPhone 8 or older
+    }
+    return false;
+}
+// Initialize based on device
+console.log(isIphoneOrFallback())
+if (isIphoneOrFallback()) {
+    document.querySelector('#Collected_waste .slider-container').style.display = 'none';
+    document.querySelector('#Collected_waste .Slider').style.display = 'block';
+    document.querySelector("#Collected_waste").classList.remove("Slider3D")
+}
 function changeLange(event){
     console.log("Clicked")
     if (localStorage.getItem("lang") === "en"){

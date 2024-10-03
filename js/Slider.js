@@ -1,3 +1,35 @@
+// For Collected Waste
+const CollectedSwiperFull = new Swiper("#Collected_waste .swiper-full", {
+	autoplay: {
+		delay: 2000
+	},
+	slidesPerView: 5,
+	centeredSlides: true,
+	spaceBetween: 32,
+	loop: true,
+	pagination: {
+		el: "#Collected_waste .swiper-pagination",
+		// dynamicBullets: true,
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + (index + 1) + "</span>";
+		}
+	},
+	navigation: {
+		nextEl: "#Collected_waste .swiper-button-next",
+		prevEl: "#Collected_waste .swiper-button-prev"
+	}
+});
+$("#Collected_waste .swiper-full").mouseenter(function () {
+	CollectedSwiperFull.autoplay.stop();
+});
+$("#Collected_waste .swiper-full").mouseleave(function () {
+	CollectedSwiperFull.autoplay.start();
+});
+if ($("#Collected_waste .swiper-slide").length > 2){
+	$("#Collected_waste .swiper-button-next").click()
+}
+
 // For Sponsers
 const swiperFull = new Swiper("#Sponsers .swiper-full", {
 	autoplay: {

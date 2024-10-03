@@ -456,13 +456,16 @@ nav .btn:hover {
     min-height: max-content;
     background-color: var(--yellow-color);
     padding-bottom: 50px;
-    height: 590px;
+    /* height: 590px; */
+    font-family: "Inter", sans-serif;
+    
 
 }
 
 #Collected_waste .collected_title{
     color: var(--light-color);
-    margin: 50px 0px;
+    padding: 50px 0px;
+    text-align: center;
 }
 
 #Collected_waste .slider-buttons button{
@@ -472,6 +475,29 @@ nav .btn:hover {
 }
 #Collected_waste .slider-buttons button::before{
     background: black;
+}
+#Collected_waste  .Slider{
+    display: none;
+}
+#Collected_waste .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: 1.4vw;
+    color: var(--dark-color);
+}
+#Collected_waste .swiper-slide img{
+    width: 100%;
+}
+@media (max-width:800px) {
+    #Collected_waste .swiper-slide{
+        font-size: 15px;
+    }
+}
+@media (max-width:460px) {
+    #Collected_waste  .Slider{
+        zoom:0.7;
+    }
 }
 @media (max-width:400px) {
     #Collected_waste .slider-container{
