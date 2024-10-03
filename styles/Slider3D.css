@@ -1,4 +1,4 @@
-.Slider3D:has(.container) {
+.Slider3D {
     height: 45vh;
     font-family: "Inter", sans-serif;
 }

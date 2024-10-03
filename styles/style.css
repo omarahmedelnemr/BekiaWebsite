@@ -348,8 +348,8 @@ nav .btn:hover {
     }
 }
 
-/* -------------------- Bekia Packages -------------------- */
-#Bekia_Packages{
+/* -------------------- Bekya Packages -------------------- */
+#Bekya_Packages{
     min-height: 100vh;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -360,13 +360,13 @@ nav .btn:hover {
     align-items: center; */
 }
 
-#Bekia_Packages .packageTitle{
+#Bekya_Packages .packageTitle{
     color: var(--yellow-color);
     font-weight: bolder; 
     text-align: center;  
     margin: 40px 0px;
 }
-#Bekia_Packages .packageBoxContainer{
+#Bekya_Packages .packageBoxContainer{
     height: 60%;
     display: flex;
     flex-direction: row;
@@ -375,7 +375,7 @@ nav .btn:hover {
     align-items: flex-end;
     flex-wrap: wrap;
 }
-#Bekia_Packages .packageBoxContainer .package_box{
+#Bekya_Packages .packageBoxContainer .package_box{
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -389,35 +389,35 @@ nav .btn:hover {
     margin: 10px 10px;
     transition: var(--transition-time);
 }
-#Bekia_Packages .packageBoxContainer .package_box:hover{
+#Bekya_Packages .packageBoxContainer .package_box:hover{
     transform: scale(1.05);
 
 }
-#Bekia_Packages .packageBoxContainer .package_box h3{
+#Bekya_Packages .packageBoxContainer .package_box h3{
     font-weight: bolder;
 }
-#Bekia_Packages .packageBoxContainer .package_box .packageImage{
+#Bekya_Packages .packageBoxContainer .package_box .packageImage{
     width: 130px;
 }
-#Bekia_Packages .packageBoxContainer .package_box .packageFeature{
+#Bekya_Packages .packageBoxContainer .package_box .packageFeature{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
     min-height: 395px;
 }
-#Bekia_Packages .packageBoxContainer .package_box .packageFeature .checkrow{
+#Bekya_Packages .packageBoxContainer .package_box .packageFeature .checkrow{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 10px 0px;
 }
-#Bekia_Packages .packageBoxContainer .package_box .packageFeature .checkrow img{
+#Bekya_Packages .packageBoxContainer .package_box .packageFeature .checkrow img{
     width: 15px;
     margin: 5px;
 }
-#Bekia_Packages .packageBoxContainer .bookNowButton{
+#Bekya_Packages .packageBoxContainer .bookNowButton{
     background-color: var(--yellow-color);
     color: var(--dark-color);
     border: none;
@@ -425,7 +425,7 @@ nav .btn:hover {
     border-radius: 10px;
     transition: var(--transition-time);
 }
-#Bekia_Packages .packageBoxContainer .bookNowButton:hover{
+#Bekya_Packages .packageBoxContainer .bookNowButton:hover{
     background-color: var(--dark-yellow-color);
 }
 
