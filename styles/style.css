@@ -6,6 +6,7 @@
     --yellow-color: #FFCA0A;
     --dark-yellow-color: orange;
     --light-color: #eeeeee;
+    --gray-color:gray;
     --transition-time: 0.5s;
 }
 
@@ -19,22 +20,13 @@ body{
     padding: 0px 10%;
 }
 *{
-    /* font-family: Inter, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal; */
-    /* font-family: "El Messiri", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal; */
-
-    /* font-family: "Inter", "El Messiri", sans-serif; */
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
 .bold_title{
     font-weight: bolder;
+    text-shadow:-2px 1px var(--gray-color)
 }
 @media (max-width:700px){
     body{
@@ -796,8 +788,17 @@ nav .btn:hover {
     margin: 0px 10px;
     padding: 5px;
     border-radius: 20px;
-    background-color: var(--yellow-color);
+    position: relative;
+    /* background-color: var(--yellow-color); */
+
 }
+/* .backgroundFrame{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 100% !important;
+} */
 #Testimonials .swiper-full .swiper-slide img{
     height: auto;
     max-height: 500px;
