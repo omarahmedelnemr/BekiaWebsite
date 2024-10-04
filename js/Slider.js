@@ -3,7 +3,7 @@ const CollectedSwiperFull = new Swiper("#Collected_waste .swiper-full", {
 	autoplay: {
 		delay: 1000
 	},
-	slidesPerView: 5,
+	slidesPerView: 3,
 	centeredSlides: true,
 	spaceBetween: 32,
 	loop: true,

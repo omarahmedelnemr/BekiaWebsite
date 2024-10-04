@@ -480,6 +480,7 @@ nav .btn:hover {
 }
 #Collected_waste .swiper-slide img{
     width: 100%;
+    margin-bottom: 10px;
 }
 @media (max-width:800px) {
     #Collected_waste .swiper-slide{
