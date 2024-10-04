@@ -1,3 +1,36 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const lazySections = document.querySelectorAll('[data-lazy]');
+
+    // Intersection Observer options
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    };
+
+    // Intersection Observer callback
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // When the section is in the viewport, remove the data-lazy attribute
+                const section = entry.target;
+                section.removeAttribute('data-lazy');
+                
+                // Optionally, you can add some class to trigger animations
+                section.classList.add('loaded');
+
+                // Stop observing the current section
+                observer.unobserve(section);
+            }
+        });
+    }, observerOptions);
+
+    // Observe each lazy-loaded section
+    lazySections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+});
+
 // function isIphoneOrFallback() {
 //     // Check if the device is iPhone 8 or older
 //     const ua = navigator.userAgent;
