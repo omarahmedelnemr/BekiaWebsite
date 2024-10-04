@@ -87,6 +87,7 @@ function loadContent() {
 
 
     document.getElementById("content").style.display = 'block'
+    document.querySelector("#portfolio .active").click()
 }
 
 // Call the function to load content when the page loads
