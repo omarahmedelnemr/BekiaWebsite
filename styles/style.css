@@ -544,7 +544,7 @@ nav .btn:hover {
 }
 
 
-/* -------------------- Events -------------------- */
+/* -------------------- Portfolio -------------------- */
 #portfolio{
     min-height: 100vh;
     background-color: var(--dark-color);
@@ -561,6 +561,7 @@ nav .btn:hover {
     font-weight: bolder;
     text-decoration: none;
     text-wrap: nowrap;
+    white-space: nowrap;
     cursor: pointer;
     font-size: 18px;
 }
