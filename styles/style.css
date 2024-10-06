@@ -618,6 +618,8 @@ nav .btn:hover {
     width: 350px;
     height: 400px;
     border-radius: 20px;
+    font-size: 18px;
+
 }
 #Team .teamRow .dm-flip-card.dark .dm-front-card{
     background-color: var(--darker-color);
@@ -670,6 +672,7 @@ nav .btn:hover {
 @media (max-width:500px){
     #Team .teamRow .dm-flip-card{
         zoom: 0.7;
+        font-size: 15px;
     }
 }
 /* -------------------- Sustainability -------------------- */
