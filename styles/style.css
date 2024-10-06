@@ -667,7 +667,7 @@ nav .btn:hover {
     text-align: center;
     padding: 30px;
 }
-@media (max-width:300px){
+@media (max-width:500px){
     #Team .teamRow .dm-flip-card{
         zoom: 0.7;
     }
