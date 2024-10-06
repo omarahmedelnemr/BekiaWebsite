@@ -679,7 +679,8 @@ nav .btn:hover {
 @media (max-width:500px){
     #Team .teamRow .dm-flip-card .dm-back-card{
         zoom: 0.7;
-        font-size: 5vw;
+        /* font-size: 5vw; */
+        font-size: 13px;
     }
 }
 /* -------------------- Sustainability -------------------- */
