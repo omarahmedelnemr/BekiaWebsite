@@ -618,7 +618,6 @@ nav .btn:hover {
     width: 350px;
     height: 400px;
     border-radius: 20px;
-    font-size: 18px;
 
 }
 #Team .teamRow .dm-flip-card.dark .dm-front-card{
@@ -668,11 +667,19 @@ nav .btn:hover {
     background-color: var(--dark-yellow-color);
     text-align: center;
     padding: 30px;
+    font-size: 1.5vw;
+
+}
+@media (max-width:900px){
+    #Team .teamRow .dm-flip-card .dm-back-card{
+        zoom: 0.7;
+        font-size: 3vw;
+    }
 }
 @media (max-width:500px){
-    #Team .teamRow .dm-flip-card{
+    #Team .teamRow .dm-flip-card .dm-back-card{
         zoom: 0.7;
-        font-size: 15px;
+        font-size: 5vw;
     }
 }
 /* -------------------- Sustainability -------------------- */
