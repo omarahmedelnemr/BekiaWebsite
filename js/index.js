@@ -88,6 +88,15 @@ function loadContent() {
 
     document.getElementById("content").style.display = 'block'
     document.querySelector("#portfolio .active").click()
+
+
+    const hash = window.location.hash.substring(1); // Get the fragment without the '#'
+    if (hash) {
+        const element = document.getElementById(hash);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    }
 }
 
 // Call the function to load content when the page loads

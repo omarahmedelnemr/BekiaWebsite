@@ -407,6 +407,7 @@ nav .btn:hover {
 }
 #Bekya_Packages .packageBoxContainer .package_box h3{
     font-weight: bolder;
+    text-wrap: nowrap;
 }
 #Bekya_Packages .packageBoxContainer .package_box .packageImage{
     width: 130px;
@@ -433,6 +434,9 @@ nav .btn:hover {
     font-size: 15px;
     margin: 5px;
     color: var(--yellow-color);
+}
+#Bekya_Packages .packageBoxContainer .package_box  .voucher{
+    height: 113px;
 }
 #Bekya_Packages .packageBoxContainer .bookNowButton{
     background-color: var(--yellow-color);
@@ -662,7 +666,8 @@ nav .btn:hover {
     background-color: var(--light-color);
 }
 #Team .teamRow .dm-flip-card .dm-front-card .teamMemberContainer img{
-    width: 80%;
+    width: 100%;
+    margin-top: 30px;
 }
 #Team .teamRow .dm-flip-card .dm-front-card span{
     font-weight: bolder;
@@ -672,7 +677,7 @@ nav .btn:hover {
     background-color: var(--dark-yellow-color);
     text-align: center;
     padding: 30px;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 
 }
 @media (max-width:900px){
@@ -685,7 +690,7 @@ nav .btn:hover {
     #Team .teamRow .dm-flip-card .dm-back-card{
         zoom: 0.7;
         /* font-size: 5vw; */
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 /* -------------------- Sustainability -------------------- */
