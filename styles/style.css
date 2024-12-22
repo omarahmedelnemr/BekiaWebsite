@@ -680,6 +680,11 @@ nav .btn:hover {
     font-size: 1.2vw;
 
 }
+@media (min-width:1550px){
+    #Team .teamRow .dm-flip-card .dm-back-card{
+        font-size: 1vw;
+    }
+}
 @media (max-width:900px){
     #Team .teamRow .dm-flip-card .dm-back-card{
         zoom: 0.7;
