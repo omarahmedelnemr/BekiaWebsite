@@ -46,12 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //     document.querySelector('#Collected_waste .Slider').style.display = 'block';
 //     document.querySelector("#Collected_waste").classList.remove("Slider3D")
 // }
-if (window.innerWidth < 800) {
-    document.querySelector('#Collected_waste .slider-container').style.display = 'none';
-    document.querySelector('#Collected_waste .Slider').style.display = 'block';
-    document.querySelector("#Collected_waste").classList.remove("Slider3D");
-    document.querySelector("#Collected_waste").style.height = 'max-content';
-}
+
 function changeLange(event){
     console.log("Clicked")
     if (localStorage.getItem("lang") === "en"){
@@ -87,7 +82,10 @@ function loadContent() {
 
 
     document.getElementById("content").style.display = 'block'
-    document.querySelector("#portfolio .active").click()
+    try{
+        document.querySelector("#portfolio .active").click()
+
+    }catch{}
 
 
     const hash = window.location.hash.substring(1); // Get the fragment without the '#'
