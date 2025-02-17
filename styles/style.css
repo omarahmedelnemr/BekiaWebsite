@@ -902,7 +902,17 @@ nav .btn:hover {
         width: 20%;
     } 
 }
-
+/* FAQ */
+#FAQ{
+    /* height: 100vh; */
+    background-color: var(--light-color);
+    padding-bottom: 20px;
+}
+#FAQ .divTitle{
+    color: var(--yellow-color);
+    text-align: center;
+    padding: 50px 0px;
+}
 /* -------------------- Footer -------------------- */
 #Footer{
     background-color: var(--dark-color);
