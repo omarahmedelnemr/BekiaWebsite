@@ -904,6 +904,7 @@ nav .btn:hover {
 
 #Soon .mainPic{
     z-index: 99;
+    width: 60%;
 }
 
 #Soon .DownloadButtons{
@@ -926,7 +927,7 @@ nav .btn:hover {
 }
 @media (max-width:700px){
     #Soon .soonRow .mainPic{
-        width: 20%;
+        width: 100%;
     } 
     #Soon .miniPic{
         height: auto;
